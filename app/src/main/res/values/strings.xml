@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TransactionApp</string>
+    <string name="trans_number">%d transactions</string>
+    <string name="products">Products</string>
+</resources>
