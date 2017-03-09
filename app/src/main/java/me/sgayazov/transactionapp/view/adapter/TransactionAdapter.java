@@ -52,8 +52,9 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
             currencyAmount.setText(String.format("%s%s", transaction.getCurrency(), transaction.getAmount()));
             if (transaction.getAmountInGBP() == Float.MIN_VALUE) {
                 gbpAmount.setText("No rate");
+            } else {
+                gbpAmount.setText(String.format("GBP%s", transaction.getAmountInGBP()));
             }
-            gbpAmount.setText(String.format("GBP%s", transaction.getAmountInGBP()));
         }
     }
 }
